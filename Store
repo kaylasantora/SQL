@@ -1,0 +1,37 @@
+/**Tienda De Ropa:
+Tshirt (20)
+Pants (30)
+Shoes (55)
+Boots (30)
+Sandals (15)
+Heels (35)
+Coats (45)
+Sweaters (25)
+Hoodies (25)
+Pajamas (7)
+Hats (10)
+Sunglasses (15)
+Purses (20)
+Belts (5)
+Socks (5)
+**/
+
+CREATE TABLE tiendaderopa (id INTEGER PRIMARY KEY, name TEXT, section TEXT, size TEXT, price INTEGER);
+
+INSERT INTO tiendaderopa VALUES (1, "Tshirt", "mens", "L", 20);
+INSERT INTO tiendaderopa VALUES (2, "Pants", "mens", "L", 30);
+INSERT INTO tiendaderopa VALUES (3, "Shoes", "womens", "L", 55);
+INSERT INTO tiendaderopa VALUES (4, "Boots", "mens", "L", 30);
+INSERT INTO tiendaderopa VALUES (5, "Sandals", "kids", "L", 15);
+INSERT INTO tiendaderopa VALUES (6, "Heels", "womens", "L", 35);
+INSERT INTO tiendaderopa VALUES (7, "Coats", "all", "L", 45);
+INSERT INTO tiendaderopa VALUES (8, "Sweaters", "all", "L", 25);
+INSERT INTO tiendaderopa VALUES (9, "Hoodies", "kids", "L", 25);
+INSERT INTO tiendaderopa VALUES (10, "Pajamas", "all", "L", 7);
+INSERT INTO tiendaderopa VALUES (11, "Hats", "all","L", 10);
+INSERT INTO tiendaderopa VALUES (12, "Sunglasses", "all", "L", 15);
+INSERT INTO tiendaderopa VALUES (13, "Purses", "womens", "L",20);
+INSERT INTO tiendaderopa VALUES (14, "Belts", "men & kids","L",5);
+INSERT INTO tiendaderopa VALUES (15, "Socks", "all", "L", 5);
+
+SELECT * FROM tiendaderopa ORDER BY price;
